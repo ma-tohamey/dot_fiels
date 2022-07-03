@@ -10,4 +10,4 @@ function run {
 run copyq &
 run nm-applet &
 nitrogen --restore &
-
+run picom --config .config/picom/picom.conf -b &
