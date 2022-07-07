@@ -13,24 +13,7 @@ HISTSIZE=1000
 SAVEHIST=1000
 bindkey -v
 
-# completion
-#autoload -U compinit
-#zstyle ':completion:*' menu select
-#zmodload zsh/complist
-#compinit
-#_comp_options+=(globdots)		# Include hidden files.
 
-
-
-
-
-
-
-
-
-# completions testing area
-
-source /home/mahmoud/zsh-plugins/completion.zsh
 
 export EDITOR="nvim"
 export VISUAL="nvim"
@@ -57,6 +40,9 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# zsh-completion-settings
+source /home/mahmoud/zsh-plugins/completion.zsh
 
 # zsh-syntax-highlighting
 source /home/mahmoud/zsh-plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
