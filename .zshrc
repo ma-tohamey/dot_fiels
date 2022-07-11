@@ -31,7 +31,8 @@ alias upgrade='sudo pacman -Syu'
 alias cpf='copyfile'
 alias cpd='copypath'
 alias nd='neovide'
-
+alias cd='z'
+alias paclist='sudo pacman -Qm'
 
 # --->> plugins section 
 
@@ -71,8 +72,11 @@ source /home/mahmoud/zsh-plugins/copyfile.plugin.zsh
 source /usr/share/fzf/completion.zsh
 source /usr/share/fzf/key-bindings.zsh
 
+# zoxide-utility
+export _ZO_ECHO=1
+eval "$(zoxide init zsh)"
 
-
-
-
+# Gem
+path+=('/home/mahmoud/.local/share/gem/ruby/3.0.0/bin')
+export PATH
 
